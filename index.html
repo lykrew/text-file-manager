@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Текстовый файловый менеджер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar__path" id="path"></div>
+      <div class="topbar__actions">
+        <button id="btn-create-file" class="btn primary">Создать файл</button>
+        <button id="btn-create-folder" class="btn">Создать папку</button>
+        <button id="btn-search" class="btn">Поиск</button>
+        <button id="btn-stats" class="btn">Статистика</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div id="items-container" class="items"></div>
+      <div id="empty-state" class="empty-state hidden">
+        В этой папке пока ничего нет. Создайте файл или папку.
+      </div>
+    </main>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="modal-backdrop" class="modal-backdrop hidden">
+    <div class="modal">
+      <div class="modal__header">
+        <h2 id="modal-title"></h2>
+        <button id="modal-close" class="modal__close" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="modal__body" id="modal-body"></div>
+      <div class="modal__footer" id="modal-footer"></div>
+    </div>
+  </div>
+
+  <script src="filesystem.js"></script>
+  <script src="storage.js"></script>
+  <script src="ui.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
