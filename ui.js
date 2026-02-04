@@ -1,5 +1,6 @@
 // Логика отображения и модальные окна (только DOM)
 
+
 // Глобальные колбэки, которые задаёт script.js
 window.handleOpenFolder = window.handleOpenFolder || function () {};
 window.handleOpenFile = window.handleOpenFile || function () {};

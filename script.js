@@ -2,6 +2,7 @@
 // Этот файл связывает чистую логику данных (filesystem.js, storage.js) и DOM (ui.js).
 
 
+
 var fsTree = null;
 var currentFolderId = 'root';
 

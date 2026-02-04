@@ -1,5 +1,6 @@
 // Работа с localStorage (без DOM)
 
+
 var STORAGE_KEY = 'text_fs_tree';
 
 function saveFS(fs) {
